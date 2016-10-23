@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>index</title>
+<link rel="stylesheet" href="./css/index.css">
+
+
+<script src="./js/lib/easeljs-0.8.1.min.js"></script>
+<script src="./js/lib/tweenjs-0.6.1.min.js"></script>
+<script src="./js/lib/movieclip-0.8.1.min.js"></script>
+<script src="./js/lib/preloadjs-0.6.1.min.js"></script>
+<script src="./js/lib/soundjs-0.6.1.min.js"></script>
+<script src="./js/lib/anime.min.js"></script>
+<!--<script src="./js/streaming.js"></script>
+<script src="./js/doll.js"></script>
+<script src="./js/result.js"></script>
+<script src="./js/background.js"></script>-->
+<script src="./js/modules.js"></script>
+
+<script src="http://news.sohu.com/upload/ky/resloader.js"></script>
+
+<script src="./js/lib/snap.svg-min.js"></script>
+<script src="http://news.sohu.com/upload/yursile/svgtest/js/vivus.min.js"></script>
+
+</head>
+
+<body ontouchstart = "event.preventDefault()"> 
+
+     <div id="prelude"> 
+        <div id="cover"></div>
+        <div id="contentBox"></div>       
+        <div id="comicBBox">
+        </div>
+        <script>
+            Snap.load("./svg/content.svg",function(d){
+                Snap("#contentBox").append(d);
+            })
+             Snap.load("./svg/comic.svg",function(d){
+                Snap("#comicBBox").append(d);
+            });
+        </script>
+    </div>
+
+
+    <div id="GradeBox">
+        <div class="btns">
+            <div class="share"></div>
+            <div class="again"></div>
+        </div>
+        <div id="Grade"></div>
+    </div>
+    <div id="shareBox">
+        <div id="shareCover">
+        </div>
+        <div class="ewm"><img src="./img/ewm.jpg" alt=""></div>
+    </div>
+    <canvas id="canvas" width="640" height="1136" style="background-color:#FFFFFF"></canvas>
+
+   
+
+<script src="./js/bundle.js"></script>
+</body>
+</html>

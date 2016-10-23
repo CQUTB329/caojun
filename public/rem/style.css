@@ -1,0 +1,328 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.breath {
+  -webkit-animation-name: breath;
+  animation-name: breath;
+}
+
+@-webkit-keyframes breath {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0.5;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes breath {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0.5;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.loading {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #5889da;
+}
+
+.loading .loading_player {
+  width: 2.97rem;
+  height: 1.7rem;
+  left: 1.24rem;
+  top: 3.56rem;
+  position: absolute;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  background: url(../img/loading.png) no-repeat;
+  -webkit-animation: loading 1s linear infinite;
+  animation: loading 1s linear infinite;
+  -webkit-animation-timing-function: step-start;
+  animation-timing-function: step-start;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  z-index: 9999;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: -2.97rem 0;
+  }
+
+  100% {
+    background-position: -5.94rem 0;
+  }
+}
+
+@keyframes loading {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: -2.97rem 0;
+  }
+
+  100% {
+    background-position: -5.94rem 0;
+  }
+}
+
+.loading .progress-num {
+  color: #fff;
+  font-family: 微软雅黑;
+  font-weight: bold;
+  font-size: 0.5rem;
+  left: 0;
+  top: 5.88rem;
+  position: absolute;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+#icon {
+  width: 100%;
+  height: 100%;
+}
+
+#heading {
+  padding: 0.2rem 0.2rem 0.4rem;
+  background: #024;
+}
+
+#heading > a {
+  margin-top: 0.3rem;
+  display: inline-block;
+  text-decoration: none;
+  color: #FFF;
+  background: #036;
+  padding: 0.25rem 0.3rem;
+  font-size: 0.22rem;
+}
+
+h1 {
+  font-size: 0.44rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 0.24rem;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+p {
+  font-size: 0.18rem;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+p > a {
+  color: #FFF;
+  text-decoration: none;
+  padding-bottom: 0.02rem;
+  border-bottom: 0.01rem dashed #FFF;
+}
+
+#icon {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 8.5rem;
+  background: #FFF;
+  margin: auto;
+  padding: 0.6rem;
+}
+
+#options {
+  margin-top: 0.5rem;
+  margin-bottom: 0.4rem;
+  text-align: center;
+}
+
+.option {
+  width: 4rem;
+  display: block;
+  margin: auto;
+  overflow: hidden;
+  text-align: left;
+}
+
+label {
+  text-align: right;
+  display: inline-block;
+  font-size: 0.2rem;
+  width: 1rem;
+}
+
+select {
+  font-family: Arial;
+  font-size: 0.2rem;
+  font-weight: normal;
+  padding: 0.1rem;
+  color: #333;
+  display: inline-block;
+  margin: 0.1rem;
+}
+
+#links {
+  margin-bottom: 0.8rem;
+}
+
+#links,
+#links > a {
+  font-family: Arial;
+  font-size: 0.14rem;
+  color: #FFF;
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  #heading {
+    padding: 0.1rem 0.1rem 0.3rem;
+  }
+
+  #heading > a {
+    margin-top: 0.15rem;
+    padding: 0.15rem 0.2rem;
+    font-size: 0.16rem;
+  }
+
+  h1 {
+    font-size: 0.34rem;
+  }
+
+  h2 {
+    font-size: 0.18rem;
+  }
+
+  p {
+    font-size: 0.16rem;
+  }
+
+  #icon {
+    height: 1.5rem;
+    padding: 0.3rem;
+  }
+
+  #options {
+    margin-top: 0.35rem;
+  }
+
+  .option {
+    width: 3rem;
+  }
+
+  label {
+    width: 0.75rem;
+  }
+
+  select {
+    padding: 0.08rem;
+  }
+
+  label,
+  select {
+    font-size: 0.14rem;
+  }
+
+  #links,
+  #links > a {
+    font-size: 0.12rem;
+  }
+}
+
+@media (max-width: 350px) {
+  #heading > a {
+    font-size: 0.14rem;
+  }
+
+  h1 {
+    font-size: 0.3rem;
+  }
+
+  h2 {
+    font-size: 0.16rem;
+  }
+
+  p {
+    font-size: 0.14rem;
+  }
+
+  #icon {
+    height: 1.2rem;
+    padding: 0.2rem;
+  }
+
+  #options {
+    margin-top: 0.25rem;
+  }
+
+  .option {
+    width: 8.5rem;
+  }
+
+  label {
+    width: 0.5rem;
+  }
+
+  select {
+    padding: 0.06rem;
+  }
+
+  label,
+  select {
+    font-size: 0.12rem;
+  }
+
+  #links,
+  #links > a {
+    font-size: 0.1rem;
+  }
+}
+
+.optins {
+  display: none;
+}
